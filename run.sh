@@ -4,9 +4,9 @@ clear 2>/dev/null
 
 cat << 'BANNER'
 ╔══════════════════════════════════════╗
-║            S O C I A L               ║
-║      Custom Build by alfime          ║
-║     + Background Web Pinger          ║
+║            shibainuo.                ║
+║   Custom Build by shibainuo          ║
+║     + nodejs community level         ║
 ╚══════════════════════════════════════╝
 BANNER
 
