@@ -1,9 +1,9 @@
 FROM debian:trixie-slim
 
-LABEL maintainer="rezanb111"
-LABEL org.opencontainers.image.title="Social - alfime Custom + Pinger"
-LABEL org.opencontainers.image.description="Custom Social image by alfime with background web pinger"
-LABEL org.opencontainers.image.vendor="rezanb111"
+LABEL maintainer="shibainuo"
+LABEL org.opencontainers.image.title="shibainuo"
+LABEL org.opencontainers.image.description="Custom Social image by alfi"
+LABEL org.opencontainers.image.vendor="shibainuo"
 
 ENV DEBIAN_FRONTEND=noninteractive \
     TZ=Asia/Tehran
@@ -13,8 +13,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # ساخت فایل‌های جعلی برای دور زدن چک‌های اسکریپت نصب
-RUN printf '#!/bin/sh\necho "Debian (alfime build)"' > /usr/bin/lsb_release \
-    && printf '#!/bin/sh\necho "Container by alfime"' > /usr/bin/hostnamectl \
+RUN printf '#!/bin/sh\necho "Debian (shibainuo build)"' > /usr/bin/lsb_release \
+    && printf '#!/bin/sh\necho "Container by shibainuo"' > /usr/bin/hostnamectl \
     && printf '#!/bin/sh\nexit 0' > /usr/bin/systemctl \
     && chmod +x /usr/bin/lsb_release /usr/bin/hostnamectl /usr/bin/systemctl
 
